@@ -1,0 +1,24 @@
+// Banner Video
+.banner {
+  &__video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill;
+  }
+
+  &__content {
+    @include center-align-absolute();
+    // position: fixed;
+    background-color: $bg--white-overlay;
+    padding: 20px;
+
+    &__title {
+      font-family: 'Exo Thin', sans-serif;
+      @include rem('font-size', 60);
+      color: $text-second;
+    }
+  }
+}
