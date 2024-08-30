@@ -8,10 +8,10 @@ const videoBtn = document.getElementById("videoBtn");
 function togglePlayPause() {
   if (video.paused) {
     video.play();
-    videoBtn.textContent = "Pause Video"; // Update button text to "Pause"
+    videoBtn.innerHTML = '<i class="fa-solid fa-play"></i>'; // Update button text to "Pause"
   } else {
     video.pause();
-    videoBtn.textContent = "Play Video"; // Update button text to "Play"
+    videoBtn.innerHTML = '<i class="fa-solid fa-pause"></i>'; // Update button text to "Play"
   }
 }
 

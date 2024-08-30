@@ -1,0 +1,13 @@
+.btn {
+  background-color: $bg-third;
+  border: none;
+  border-radius: 3px;
+  @include rem('width', 250);
+  @include rem('height', 50);
+  text-transform: uppercase;
+  color: $white;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $bg-fourth;
+  }
+}

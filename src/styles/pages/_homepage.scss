@@ -1,7 +1,9 @@
 // Banner Video
 .banner {
+  height: 100vh;
+
   &__video {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -10,15 +12,296 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include center-align-absolute();
-    // position: fixed;
     background-color: $bg--white-overlay;
-    padding: 20px;
+    @include rem('border-radius', 10);
+    @include rem('padding', 20);
+  }
 
-    &__title {
-      font-family: 'Exo Thin', sans-serif;
-      @include rem('font-size', 60);
+  &__title {
+    font-family: 'Exo Thin', sans-serif;
+    @include rem('font-size', 60);
+    color: $text-second;
+  }
+
+  &__text-note {
+    @include rem('font-size', 14);
+    @include rem('margin-top', 20);
+  }
+}
+
+.btn-wrap {
+  .btn-video {
+    background-color: $bg-fifth;
+    border-radius: 50%;
+    @include rem('width', 60);
+    @include rem('height', 60);
+    @include rem('margin', 40, 0, 40, 0);
+
+    i {
+      color: $white;
+      @include rem('font-size', 21);
+    }
+  }
+}
+
+// CSS Section First
+.b-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  @include rem('max-width', 570);
+  height: 100%;
+  margin: auto;
+}
+
+.first {
+  width: 100%;
+  height: 90vh;
+
+  &__content {
+    width: 75%;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .text {
+    @include rem('margin', 20, 0, 20, 0);
+  }
+}
+
+.bg-first {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// CSS Section Second
+.second {
+  width: 100%;
+  height: 100%;
+  background-color: $bg-second;
+
+  .block-container {
+    position: relative;
+
+    .container {
+      height: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    @include rem('column-gap', 30);
+    @include rem('margin-top', 90);
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__subtitle {
       color: $text-second;
+      @include rem('font-size', 22);
+      @include rem('margin', 35, 0, 15, 0);
+    }
+
+    &__text {
+      line-height: 1.6;
+    }
+  }
+}
+
+.pen,
+.ears,
+.cup {
+  position: absolute;
+}
+
+.pen {
+  top: 0;
+  left: 15%;
+}
+
+.ears {
+  top: 0;
+  right: 20%;
+}
+
+.cup {
+  bottom: 0;
+  right: 15%;
+}
+
+// CSS Section Third
+.third {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, $bg-fourth 30%, $white 0%);
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__title {
+    width: 100%;
+    @include rem('max-width', 500);
+    margin: 0;
+  }
+
+  .img-box,
+  .text-box {
+    width: 50%;
+  }
+
+  .img-box {
+    text-align: center;
+  }
+}
+
+// CSS Section Four
+.four {
+  background: url('../../images/bg-overlay-avatar.png') no-repeat center center / cover;
+  color: $white;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+  }
+
+  .content-branch {
+    display: flex;
+    justify-content: space-between;
+    @include rem('margin', 80, 20, 0, 20);
+
+    &__img {
+      filter: contrast(0.1);
+    }
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__box {
+      &__name {
+        @include rem('margin-top', 20);
+        @include rem('margin-bottom', 40);
+        line-height: 1.6;
+      }
+
+      &__text {
+        .text {
+          font-family: 'Exo Thin', sans-serif;
+          font-style: italic;
+        }
+      }
+    }
+
+    .text-job {
+      color: $text-third;
+    }
+  }
+}
+
+// CSS Section Five
+.five {
+  background-color: $bg-second;
+
+  .b-layout {
+    position: relative;
+  }
+
+  &__img {
+    height: 375px;
+    max-height: 375px;
+  }
+
+  .box-img {
+    position: absolute;
+    right: 50%;
+    bottom: 6%;
+    transform: translate(50%, 50%);
+  }
+}
+
+// CSS Section Six
+.six {
+  background-color: $bg-fifth;
+
+  .sub-title {
+    color: $white;
+  }
+
+  .term-box {
+    font-family: 'Exo Regular', sans-serif;
+    color: $text-fifth;
+    @include rem('margin-top', 50);
+
+    &__link {
+      color: $text-fifth;
+      text-decoration: underline;
+    }
+  }
+}
+
+.form-box {
+  @include rem('margin-top', 100);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    @include rem('column-gap', 40);
+  }
+
+  .input-text {
+    border: 1px solid $white;
+    border-radius: 3px;
+    color: $white;
+    width: 260px;
+    height: 50px;
+    background-color: $bg-eight;
+  }
+
+  .btn-submit {
+    position: relative;
+    width: 250px;
+    height: 50px;
+
+    .btn-text {
+      position: absolute;
+      text-transform: lowercase;
+      top: -45px;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      content: '';
+      background: url('../../images/arrow-form-icon.svg') no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -50px;
+      left: 5px;
     }
   }
 }

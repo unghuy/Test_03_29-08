@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- include head.html -->
-  <title>HTML Boilerplate</title>
+  <head>
+    <!-- include head.html -->
+    <title>HTML Boilerplate</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
@@ -19,29 +19,36 @@
 <meta property="og:type" content="">
 <meta property="og:url" content="" />
 <!-- Google Font -->
-  <!-- include styles.html -->
-  <!-- build:css(.) styles/vendor.min.css -->
+    <!-- include styles.html -->
+    <!-- build:css(.) styles/vendor.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/swiper/swiper-bundle.css">
 <!-- endbuild -->
 <!-- build:css(.tmp) styles/style.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
 <!-- endbuild -->
-</head>
-<body>
-  <div class="wrapper">
-    <!-- include banner.html -->
-    <section class="banner">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- include banner.html -->
+      <section class="banner">
   <div class="block-container">
-    <video muted loop id="bannerVideo" class="banner__video">
+    <video autoplay muted loop id="bannerVideo" class="banner__video">
       <source src="../../images/Clouds-Rest-Winter.mp4" type="video/mp4" />
     </video>
     <div class="container">
       <div class="banner__content">
-        <p class="banner__content__title">
-          There is no other platforms for you as like
+        <p class="banner__title center">
+          There is no other<br />platforms for you as like
         </p>
-        <button id="videoBtn" class="btn-video">Pause</button>
-        <button class="btn">try now</button>
+        <div class="btn-wrap">
+          <button id="videoBtn" class="btn-video">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="btn-wrap">
+          <button class="btn">try now</button>
+        </div>
+        <p class="banner__text-note">&lowast; No need to add cards details</p>
       </div>
     </div>
   </div>
@@ -49,38 +56,283 @@
 </section>
 
 
-    <section class="main-container">
-      <div id="a" class="block-container">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="center">
-              <div class="col-xs-12">
-                <h4 class="title-block">HTML Boilerplate</h4>
+      <section class="first">
+        <div class="first__wrap">
+          <div class="first__content">
+            <div class="b-layout">
+              <div class="first__title">
+                <h2>new design</h2>
+                <p class="sub-title">
+                  There is no other platforms for you as like ....
+                </p>
+              </div>
+              <p class="text">
+                Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                venenatis vestibulum. Donec id elit non mi porta gravida at eget
+                metus. Curabitur blandit tempus porttitor. Etiam porta sem
+                malesuada magna mollis euismod. Vestibulum id ligula porta felis
+                euismod semper.
+              </p>
+              <p class="text">
+                Donec sed odio dui. Aenean lacinia bibendum nulla sed
+                consectetur. Donec ullamcorper nulla non metus auctor fringilla.
+                Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit
+                libero, a pharetra augue.
+              </p>
+            </div>
+          </div>
+          <div class="bg-first">
+            <img src="../../images/bg-design.png" alt="Design" />
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </section>
+
+      <section class="second">
+        <div class="block-container">
+          <div class="img-layout">
+            <img class="pen" src="../../images/pen-1.png" alt="Pen" />
+            <img
+              class="ears"
+              src="../../images/earphones.png"
+              alt="Earphones"
+            />
+            <img
+              class="cup"
+              src="../../images/coffee-cup.png"
+              alt="Coffee Cup"
+            />
+          </div>
+          <div class="container">
+            <div class="second__title center">
+              <h2>new features</h2>
+              <p class="sub-title">Some awesone features</p>
+            </div>
+            <div class="second__content">
+              <div class="item">
+                <img src="../../images/picture-icon.png" alt="Picture" />
+                <h4 class="item__subtitle">Some awesone features</h4>
+                <p class="item__text center">
+                  Donec sed odio dui. Aenean lacinia bibendum nulla sed
+                  consectetur. Nulla vitae elit libero, a pharetra augue.
+                </p>
+              </div>
+              <div class="item">
+                <img src="../../images/airplane-icon.png" alt="Plane" />
+                <h4 class="item__subtitle">Some awesone features</h4>
+                <p class="item__text center">
+                  Donec sed odio dui. Aenean lacinia bibendum nulla sed
+                  consectetur. Nulla vitae elit libero, a pharetra augue.
+                </p>
+              </div>
+              <div class="item">
+                <img src="../../images/bulb-icon.png" alt="Bulb" />
+                <h4 class="item__subtitle">Some awesone features</h4>
+                <p class="item__text center">
+                  Donec sed odio dui. Aenean lacinia bibendum nulla sed
+                  consectetur. Nulla vitae elit libero, a pharetra augue.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="clearfix"></div>
-    </section>
+      </section>
 
-    <!-- include footer.html -->
-    <footer class="footer-container">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="center">
-        <div class="col-md-12">
-          <p>Footer Container</p>
+      <section class="third">
+        <div class="block-container">
+          <div class="third__content">
+            <div class="item img-box">
+              <img src="../../images/macbook-icon.png" alt="Macbook" />
+            </div>
+            <div class="item text-box">
+              <div class="b-layout third__title">
+                <h2>new design</h2>
+                <p class="sub-title">
+                  Resposive design, just need your tap ....
+                </p>
+                <p class="text">
+                  Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                  venenatis vestibulum. Donec id elit non mi porta gravida at
+                  eget metus. Curabitur blandit tempus porttitor. Etiasem
+                  malesuada magn. Vestibulum felis euismod semper.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="four">
+        <div class="block-container">
+          <div class="container">
+            <div class="four__content">
+              <div class="item">
+                <div class="item__img-avatar">
+                  <img src="../../images/avatar.png" alt="Avatar" />
+                </div>
+                <div class="item__box__name center">
+                  <h3 class="text-name">Jonathon Doe</h3>
+                  <p class="text-job">Co Founder</p>
+                </div>
+                <div class="item__box__text">
+                  <p class="text center">
+                    “Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                    venenatis vestibulum. Donec id gravida at eget metus.
+                    Etiasem malesuada magn”
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-avatar">
+                  <img src="../../images/avatar.png" alt="Avatar" />
+                </div>
+                <div class="item__box__name center">
+                  <h3 class="text-name">Jonathon Doe</h3>
+                  <p class="text-job">Co Founder</p>
+                </div>
+                <div class="item__box__text">
+                  <p class="text center">
+                    “Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                    venenatis vestibulum. Donec id gravida at eget metus.
+                    Etiasem malesuada magn”
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-avatar">
+                  <img src="../../images/avatar.png" alt="Avatar" />
+                </div>
+                <div class="item__box__name center">
+                  <h3 class="text-name">Jonathon Doe</h3>
+                  <p class="text-job">Co Founder</p>
+                </div>
+                <div class="item__box__text">
+                  <p class="text center">
+                    “Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                    venenatis vestibulum. Donec id gravida at eget metus.
+                    Etiasem malesuada magn”
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-branch">
+              <img
+                src="../../images/branch-01.svg"
+                alt="Hits"
+                class="content-branch__img"
+              />
+              <img
+                src="../../images/branch-02.svg"
+                alt="RVLVR"
+                class="content-branch__img"
+              />
+              <img
+                src="../../images/branch-03.svg"
+                alt="Eatfindr"
+                class="content-branch__img"
+              />
+              <img
+                src="../../images/branch-04.svg"
+                alt="Igor"
+                class="content-branch__img"
+              />
+              <img
+                src="../../images/branch-05.svg"
+                alt="Sienna"
+                class="content-branch__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="five">
+        <div class="block-container">
+          <div class="container b-layout">
+            <div class="five__title center">
+              <h2>new features</h2>
+              <p class="sub-title">Some awesone features</p>
+            </div>
+            <p class="five__text center">
+              Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+              vestibulum. Donec id elit non mi porta gravida at eget metus.
+              Curabitur blandit tempus porttitor. Etiasem malesuada magn.
+              Vestibulum felis euismod semper.
+            </p>
+            <div class="five__img">
+              <div class="box-img">
+                <img src="../../images/mac-browser.png" alt="Macbook Browser" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="six">
+        <div class="block-container">
+          <div class="container">
+            <div class="six__title center">
+              <h2>new features</h2>
+              <p class="sub-title">Over 1000 designers are using ...</p>
+            </div>
+            <div class="form-box">
+              <form action="" class="form-box__content">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="input-text"
+                    placeholder="Full name"
+                  />
+                  <label for="name" class="form__label">Full name</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="input-text"
+                    placeholder="Your email"
+                  />
+                  <label for="name" class="form__label">Your email</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="input-text"
+                    placeholder="Password"
+                  />
+                  <label for="name" class="form__label">Password</label>
+                </div>
+
+                <button type="submit" class="btn btn-submit">
+                  <span class="btn-text">30 days free trial for all.</span>
+                  try now
+                </button>
+              </form>
+            </div>
+            <div class="term-box center">
+              <p class="term-box__text">
+                By Signing up you agree to our
+                <a href="#" class="term-box__link">terms &amp; Services</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- include footer.html -->
+      <footer class="footer-container">
+  <div class="block-container">
+    <div class="container">
+      <div class="ft-content">
+
       </div>
     </div>
   </div>
   <div class="clearfix"></div>
 </footer>
-  </div>
+    </div>
 
-  <!-- include scripts.html -->
-  <!-- build:js(.) scripts/vendor.min.js -->
+    <!-- include scripts.html -->
+    <!-- build:js(.) scripts/vendor.min.js -->
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <!-- <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
 
@@ -89,5 +341,5 @@
 <!-- build:js scripts/script.min.js -->
 <script type="text/javascript" src="scripts/script.js"></script>
 <!-- endbuild -->
-</body>
+  </body>
 </html>

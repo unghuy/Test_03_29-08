@@ -11,6 +11,21 @@
   text-align: center;
 }
 
+.block-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  @include rem('padding', 150, 0, 150, 0);
+}
+
+.sub-title {
+  color: $text-second;
+  @include rem('font-size', 40);
+  @include rem('letter-spacing', 2);
+  @include rem('margin', 30, 0, 20, 0);
+}
+
+
 // Margin helper classes
 @for $i from 0 through 13 {
   $value: $i*5;
