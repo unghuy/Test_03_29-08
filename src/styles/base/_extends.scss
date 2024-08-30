@@ -62,6 +62,6 @@
 
   .form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label {
     transform: translateY(-80px) scale(1);
-    color: $text-primary;
+    color: $text-second;
   }
 }
