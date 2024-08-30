@@ -1,0 +1,72 @@
+.ft-container {
+  background: linear-gradient(-139deg, #ff8a8a 25%, #ffffff 0%);
+
+  .ft-content {
+    display: flex;
+    justify-content: space-between;
+    @include rem('column-gap', 40);
+    width: 80%;
+
+    h3 {
+      color: $text-second;
+      @include rem('margin-bottom', 20);
+    }
+
+    p, a {
+      color: $text-primary;
+      @include rem('font-size', 14);
+      line-height: 2;
+    }
+  }
+
+  .box-address {
+    width: 25%;
+  }
+
+  .box-news {
+    &__form {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__input-text {
+      border: 1px solid $bg-eleven;
+      border-radius: 3px;
+      @include rem('width', 215);
+      @include rem('height', 50);
+      background-color: $bg-ten;
+      &::placeholder {
+        color: $text-primary;
+      }
+    }
+
+    &__btn {
+      background-color: $bg-third;
+      border-radius: 3px;
+      @include rem('width', 50);
+      @include rem('height', 50);
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $bg-fourth;
+      }
+
+      &__icon {
+        color: $white;
+        @include rem('font-size', 21);
+      }
+    }
+  }
+
+  .social-box {
+    @include rem('margin-top', 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    i {
+      color: $bg-seven;
+      @include rem('font-size', 21);
+    }
+  }
+}
