@@ -1,0 +1,67 @@
+.form-input {
+  transition: all 0.3s;
+}
+
+.form-input:not(:placeholder-shown) {
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-input:focus {
+  outline: none;
+  border-top-color: $bg-fifth !important;
+}
+
+.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-80px) scale(1);
+  color: $white;
+}
+
+.form-input::placeholder {
+  display: none;
+  color: transparent;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+}
+
+.form-label{
+  display: block;
+  color: $white;
+  text-transform: uppercase;
+  /* Moves the label on TOP of the placeholder */
+  /* You'll need to change this as needed */
+  transform: translate(20px, -35px);
+  transform-origin: 0 0;
+  /* Used later for transitions */
+  transition: all 500ms;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  /* THIS PART IS IMPORTANT! */
+  /* This line prevents the label from being selected.*/
+  /* This is crucial because if this line doesn't exist, users can
+     click on the label, instead of the input field. That's bad UX! */
+  pointer-events: none;
+}
+
+.box-news {
+  &__form {
+    .form-label {
+      color: $text-primary;
+    }
+  }
+  .form-input:focus {
+    border-top-color: $white !important;
+  }
+
+  .form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-80px) scale(1);
+    color: $text-primary;
+  }
+}

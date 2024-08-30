@@ -27,6 +27,7 @@
     &__form {
       display: flex;
       justify-content: center;
+      @include rem('margin-top', 40);
     }
 
     &__input-text {
@@ -35,9 +36,6 @@
       @include rem('width', 215);
       @include rem('height', 50);
       background-color: $bg-ten;
-      &::placeholder {
-        color: $text-primary;
-      }
     }
 
     &__btn {
